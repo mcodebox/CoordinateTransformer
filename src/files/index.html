@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/bundle.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div id="contentDiv">
+    <div id="exampleDiv">
+      <h1>Coordinate Transformer</h1>
+      <div id="descriptionDiv">
+      Enter your coordinates in the following format (latitude, longitude):<br>
+      &nbsp; &#8226; for WGS84 / EPSG:4326 &#8594; <span class="coordSpan"><strong>51.092151, 10.298398</strong></span><br>
+      &nbsp; &#8226; for Web Mercator / EPSG:3857 &#8594; <span class="coordSpan"><strong>5687552.232853043, 1152635.5714738932</strong></span><br><hr>
+      <div>
+    </div>
+
+    <div id="inputDiv">
+      WGS84: <input id="wgsInput" type="text" placeholder="51.092151, 10.298398" onClick="this.select();"> to Web Mercator
+      <input type="button" onclick="fromWGS()" value="Transform &#8594;">
+      <br>
+      <br>
+      Web Mercator: <input id="wmInput" type="text" placeholder="5687552.232853043, 1152635.5714738932" onClick="this.select();"> to WGS84
+      <input type="button" onclick="fromWM()" value="Transform &#8594;">
+    </div>
+
+    <div id="outputDiv">
+
+    </div>
+  </div>
+  <script src="js/bundle.min.js" charset="utf-8"></script>
+  <script src="js/main.min.js" charset="utf-8"></script>
+</body>
+
+</html>

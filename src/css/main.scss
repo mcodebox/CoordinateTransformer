@@ -1,0 +1,89 @@
+// main.scss
+
+body {
+  background-color: #688198;
+}
+
+input[type="text"] {
+  font-family: monospace;
+  padding: 2px;
+  background-color: #eeeeee;
+  //border: 0px;
+  //width: 30px;
+  &:focus {
+    border: solid 2px blue;
+  }
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#contentDiv {
+  position: relative;
+  top: 100px;
+  background-color: #ccc;
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 8px 1px black;
+  width: 600px;
+  padding: 10px;
+  margin: auto;
+}
+
+#exampleDiv {
+  text-align: center;
+  //line-height: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 5px;
+}
+
+#descriptionDiv {
+  text-align: left;
+}
+
+#inputDiv {
+  @extend #exampleDiv;
+  background-color: #929394;
+  border-radius: 8px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+#outputDiv {
+  @extend #exampleDiv;
+  height: 0px;
+  //padding: 5px;
+  //padding-top: 20px;
+}
+
+#resultDiv {
+  @extend #inputDiv;
+  font-family: monospace;
+  background-color: #85cc7c;
+  // border: 2px solid #7be800;
+  border: 2px solid #929394;
+  //box-shadow: inset 0px 0px 5px 0px black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#copyBtn {
+  margin: 5px;
+}
+
+.coordSpan {
+  font-family: monospace;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+}

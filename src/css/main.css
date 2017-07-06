@@ -1,0 +1,64 @@
+body {
+  background-color: #688198; }
+
+input[type="text"] {
+  font-family: monospace;
+  padding: 2px;
+  background-color: #eeeeee; }
+  input[type="text"]:focus {
+    border: solid 2px blue; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+#contentDiv {
+  position: relative;
+  top: 100px;
+  background-color: #ccc;
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 8px 1px black;
+  width: 600px;
+  padding: 10px;
+  margin: auto; }
+
+#exampleDiv, #inputDiv, #resultDiv, #outputDiv {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 5px; }
+
+#descriptionDiv {
+  text-align: left; }
+
+#inputDiv, #resultDiv {
+  background-color: #929394;
+  border-radius: 8px;
+  margin-top: 25px;
+  margin-bottom: 15px; }
+
+#outputDiv {
+  height: 0px; }
+
+#resultDiv {
+  font-family: monospace;
+  background-color: #85cc7c;
+  border: 2px solid #929394;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+#copyBtn {
+  margin: 5px; }
+
+.coordSpan {
+  font-family: monospace;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-right: 2px; }
